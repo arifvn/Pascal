@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Belajar Pascal</string>
+
+    <!--Materi 1-->
+    <string name="kd1">KD 3.1</string>
+    <string name="caption1">Alur Logika Pemrograman Komputer</string>
+    <string name="number1">1</string>
+
+    <!--Materi 2-->
+    <string name="kd2">KD 3.2</string>
+    <string name="caption2">Perangkat Lunak Bahasa\nPemrograman</string>
+    <string name="number2">2</string>
+
+    <!--Materi 3-->
+    <string name="kd3">KD 3.3</string>
+    <string name="caption3">Struktur Bahasa Pemrograman</string>
+    <string name="number3">3</string>
+
+    <!--Materi 4-->
+    <string name="kd4">KD 3.4</string>
+    <string name="caption4">Tipe Data, Variabel, Konstanta,\nOperator, dan Ekspresi</string>
+    <string name="number4">4</string>
+
+    <!--Materi 5-->
+    <string name="kd5">KD 3.5</string>
+    <string name="caption5">Operasi Aritmatika\ndan Logika</string>
+    <string name="number5">5</string>
+
+    <!--Materi 6-->
+    <string name="kd6">KD 3.6</string>
+    <string name="caption6">Struktur Kontrol Percabangan</string>
+    <string name="number6">6</string>
+
+    <!--Materi 7-->
+    <string name="kd7">KD 3.7</string>
+    <string name="caption7">Struktur Kontrol Perulangan</string>
+    <string name="number7">7</string>
+
+    <!--PROGRAM PASCAL-->
+    <string name="program1">
+        Program Perkalian;\n\
+        \t\tUses CRT;\n
+        \t\tConst phi = 3.14;\n
+        \t\tVar x : Integer;\n
+        \t\t\t\ty : Real;\n
+        \t\tBegin\n
+        \t\t\t\tClrScr;\n
+        \t\t\t\tx := 5;\n
+        \t\t\t\ty := x * phi;\n
+        \t\t\t\tWriteln(\'Nilai y = \', y:5:2);\n
+        \t\t\t\tReadln;\n
+        \t\tEnd.
+    </string>
+
+    <string name="program1_hasil">
+        Nilai y = 15.70
+    </string>
+
+    <string name="program2">
+        Program PembandingAngka;\n\n
+        \t\tUses CRT;\n
+        \t\tVar a, b : Integer;\n\n
+
+        \t\tBegin\n
+           \t\t\t\tClrScr;\n
+           \t\t\t\ta := 10;\n
+           \t\t\t\tb := 6;\n
+           \t\t\t\tif (a > b) then\n
+              \t\t\t\t\t\tWriteln(\'Bilangan A terbesar\')\n
+           \t\t\t\telse\n
+              \t\t\t\t\t\tWriteln(\'Bilangan B terbesar\');\n
+        \t\tend.
+    </string>
+
+    <string name="program2_hasil">
+        Bilangan A terbesar
+    </string>
+
+    <string name="program3">
+        Program JumlahGanjilGenap;\n\n
+        Uses CRT;\n
+        var i : Byte;\n
+            \t\tganjil, genap : Byte;\n
+        Begin\n
+             \t\tClrscr;\n
+             \t\tganjil := 0;\n
+             \t\tgenap  := 0;\n
+             \t\tFor i:= 1 to 100 do\n
+             \t\tBegin\n
+                \t\t\t\tif (i mod 2)=0 Then\n
+                   \t\t\t\t\t\tInc(genap)\n
+                \t\t\t\tElse\n
+                   \t\t\t\t\t\tInc (ganjil);\n
+             \t\tEnd;\n
+             \t\tWriteln(\'Jumlah bilangan genap  : \',genap);\n
+             \t\tWriteln(\'Jumlah bilangan ganjil : \',ganjil);\n
+             \t\tReadln;\n
+        End.
+    </string>
+
+    <string name="program3_hasil">
+        Jumlah bilangan genap  : 50\nJumlah bilangan ganjil : 50\n
+    </string>
+
+    <string name="program4">
+        Program Modulus;\n\n
+        Uses CRT;\n
+        var i : Byte;\n
+        Begin\n
+             \t\tClrscr;\n
+             \t\tfor i:=1 to 10 do\n
+                \t\t\t\tWriteln(i,\' mod 3 = \', i mod 3);\n
+             \t\tReadln;\n
+        End.\n
+    </string>
+
+    <string name="program4_hasil">1 mod 3 = 1\n2 mod 3 = 2\n3 mod 3 = 0\n4 mod 3 = 1\n5 mod 3 = 2\n6 mod 3 = 0\n7 mod 3 = 1\n8 mod 3 = 2\n9 mod 3 = 0\n10 mod 3 = 1\n
+    </string>
+
+    <string name="program5">
+        Program CetakGanjil;\n\n
+        Uses CRT;\n
+        Var i  : Byte;\n
+        Begin\n
+             \t\tClrScr;\n
+             \t\ti:=10;\n
+             \t\twhile (i >= 1) Do\n
+             \t\tBegin\n
+               \t\t\t\tIf i mod 2 = 1 Then\n
+               \t\t\t\tBegin\n
+                    \t\t\t\tWrite(i,\'  \');\n
+                    \t\t\t\tif i= 5 Then\n
+                       \t\t\t\t\texit\n
+             \t\t\t\tEnd;\n
+             \t\t\t\tDec(i);\n
+             \t\tEnd;\n
+             \t\tReadln;\n
+        End.
+    </string>
+
+    <string name="program5_hasil">
+        9  7  5
+    </string>
+
+    <string name="program6">
+        Program Penjumlahan;\n\n
+        Uses CRT;\n
+        Var\n
+            \t\ty       : Integer;\n
+            \t\tp       : Real;\n
+            \t\tX       : Real;\n
+        Begin\n
+             \t\ty := 5;\n
+             \t\tp := 6;\n
+             \t\tx := y + p;\n
+             \t\tWriteln(\'Nilai X adalah :\',x:4:1);\n
+        End.
+    </string>
+
+    <string name="program6_hasil">
+        Nilai X adalah :11.0
+    </string>
+
+    <string name="program7">
+        Program ContohLogic;\n\n
+        Uses CRT;\n
+        Var a,b,c,d : Boolean;\n
+        Begin\n
+             \t\ta := True;\n
+             \t\tb := False;\n
+             \t\tc := not a;\n
+             \t\td := not b;\n
+             \t\tWriteln(a);\n
+             \t\tWriteln(b);\n
+             \t\tWriteln(c);\n
+             \t\tWriteln(d);\n
+        End.
+    </string>
+
+    <string name="program7_hasil">TRUE\nFALSE\nFALSE\nTRUE\n
+    </string>
+
+</resources>

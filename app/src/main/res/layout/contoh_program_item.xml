@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_program_input"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_program_title"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_program_title"
+                    android:text="Program ContohLogic"
+                    android:layout_height="wrap_content" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_program_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="18sp"
+                        android:text="@string/program7"
+                        android:fontFamily="@font/consola" />
+
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/btn_program_eksekusi"
+                    android:layout_below="@id/card_program_input"
+                    android:textAllCaps="true"
+                    android:text="Eksekusi"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_btn_eksekusi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_program_output"
+            android:layout_width="match_parent"
+            android:layout_below="@id/card_program_input"
+            android:layout_height="170dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/bg_program_hasil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_program_title"
+                    android:text="Hasil Program"
+                    android:layout_height="wrap_content" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Nilai y = 15.70"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        android:fontFamily="@font/consola"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/text_program_output"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </ScrollView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
